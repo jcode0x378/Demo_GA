@@ -1,17 +1,69 @@
 <!DOCTYPE html>
-<html>
 <head>
-    <meta charset="UTF-8">
-    <style>
+    <title>資管筆記</title>
+    <meta charset="utf-8">
+    <meta name="jeffrey">
+    <style>   
+        * {
+        font-family: 'Noto Sans TC', sans-serif;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        }
+
+        .main-nav {
+            background-color: #27232F;
+        }
+
+        .main-nav a {
+            font-size: 20px;
+            color: #E8E4CE;
+            display: block;
+            padding: 40px 40px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .main-nav>ul {
+            display: flex;
+            justify-content: center;
+        }
+        .sub-menu{
+            font-size: 16px;
+            display: none;
+            position: absolute;
+            background-color: #4b4a4a;
+        }
+        .menu-item:hover .sub-menu{
+            display: flex;
+        }
+        .sub-menu-item > a{
+            font-size: 16px;
+            color: #ffb336;
+        }
+        .content{
+            font-size: 20px;
+            color: #333333;
+            padding: 20px;
+            text-align: center;
+            margin-top: 3px;
+        }
+        h5{
+            font-size: 30px;
+            color: #27232f;
+            padding: 1px;
+            text-align: center;
+            margin-top: 1px;
+        }
         body{
-            font-family: 'Noto Sans TC', sans-serif;
-            background-color: rgb(15, 17, 34);
+            background-color: #f3f7f7;
+            text-align: center;
+            color: #ffb336;
         }
-        h1{
-            color: rgb(255, 255, 255);
-        }
-        p{
-            color: rgb(247, 243, 4);
+        .title_hr{
+            color: #ffb336;
+            border:solid 3px;
+            align-self: center;
         }
     </style>
     <!-- Google tag (gtag.js) -->
@@ -23,14 +75,56 @@
 
       gtag('config', 'G-116EY38E79');
     </script>
-<meta http-equiv="Content-Type" content="text/html; charset=big5">
-<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
-<title>Demo_GA</title>
 </head>
-<body> 
-<h1>Gtag串接</h1>
-    <p>G-116EY38E79<p>
-<h1>數位行銷基礎知識完整版</h1>
-    <img src="images/001.jpg" width="800" height="600" />
+<nav class="main-nav">
+    <ul>
+        <li class="menu-item">
+            <a href="">課程筆記</a>
+            <ul class="sub-menu">
+                <li class="sub-menu-item">
+                    <a href="">ERP</a>
+                    <ul>
+                        <li>
+                            <a href="https://wane.nutc.edu.tw/register/index.php">林老師的教學園地</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sub-menu-item">
+                    <a href="">網路行銷</a>
+                    <ul>
+                        <li>
+                            <a href="#">GA測試頁</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sub-menu-item">
+                    <a href="">社群商務</a>
+                    <ul>
+                        <li>
+                            <a href="#">null</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="#">各科評分標準</a></li>
+        <li><a href="https://sso.nutc.edu.tw/eportal/">eportal登入頁</a></li>
+        <li><a href="https://aca.nutc.edu.tw/ezfiles/3/1003/img/1153/368372132.pdf">台中科大行事曆</a></li>
+    </ul>
+</nav> 
+<body>
+    <main>
+        <h5>Gtag串接</h5><br>
+        <b>G-116EY38E79</b><br><br>
+        <h5>數位行銷基礎知識完整版</h5>
+        <img src="images/001.jpg" width="800" height="600" />
+    </main>
 </body>
+<footer>
+    <center><font align="center" color="#B8B8AA">&copy Copyright-XXXX
+        <br>....
+    </font></center>
+</footer>
+ 
+
 </html>
